@@ -13,6 +13,9 @@
     <p>For strict mode in js we only have to write a string that is 'use strict'.</p>
     <p>In the below example, when i disable the strict mode, it will not show any error for any undeclared variable. But when i enable it it will show error in console for undeclared variable.</p>
 
+    <p>Strict Mode also gives error for js reserved words for future.</p>
+
+
 
     <script>
         'use strict';
@@ -20,6 +23,9 @@
         let passTest = true;
         if (passTest) hasDriverLisence = true;
        if (hasDriversLisence) console.log ("I can Drive.");
+
+    //    Reserved Words
+    Const interface = "abc";
     </script>
 </body>
 </html>
