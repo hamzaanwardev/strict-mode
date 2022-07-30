@@ -11,13 +11,15 @@
     <p>In JavaScript the Strict mode will help us to debug an error in JavaScript.</p> 
     <p> in strict mode the undeclared variable can not be executed.</p> 
     <p>For strict mode in js we only have to write a string that is 'use strict'.</p>
+    <p>In the below example, when i disable the strict mode, it will not show any error for any undeclared variable. But when i enable it it will show error in console for undeclared variable.</p>
 
 
     <script>
+        'use strict';
         let hasDriversLisence = false;
         let passTest = true;
         if (passTest) hasDriverLisence = true;
-        console.log (hasDriversLisence);
+       if (hasDriversLisence) console.log ("I can Drive.");
     </script>
 </body>
 </html>
